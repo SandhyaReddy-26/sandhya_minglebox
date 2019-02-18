@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Register</title>
+</head>
+<body>
+	<form action="{{ url_for('register')}}" method="POST" enctype="multipart/form-data">
+		Select type:<select>
+                             <option value="buyer">Buyer</option>
+                             <option value="coder">Coder</option>
+                             <option value="admin">Admin</option></select><br>
+                User Name:<input type="text" name="name"><br>
+		Password:<input type="password" name="password"><br>
+		
+		<input type="submit" value="login">
+                <input type="submit" value="register">
+	</form>
+</body>
+</html>
